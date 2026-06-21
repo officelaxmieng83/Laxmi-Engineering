@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Laxmi Engineering</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js"></script>
+</head>
+<body>
+  <script>renderHeader("Contact Us")</script>
+  <main class="section">
+    <div class="container split">
+      <section>
+        <span class="eyebrow">Contact Us</span>
+        <h1 class="section-title">Talk to Laxmi Engineering for machines, spare parts and servicing.</h1>
+        <div class="contact-list">
+          <div class="contact-item"><b>Call</b><span data-contact-phone1></span>, <span data-contact-phone2></span></div>
+          <div class="contact-item"><b>WhatsApp Chat</b><a class="btn green small" target="_blank" href="https://wa.me/919477090833">Chat on WhatsApp</a></div>
+          <div class="contact-item"><b>Email</b><a href="mailto:office.laxmieng83@gmail.com" data-contact-email></a></div>
+          <div class="contact-item"><b>Manufacturing Unit</b><span data-contact-address></span><br><br><a class="btn primary small" data-map-link target="_blank" href="#">Open Google Maps</a></div>
+        </div>
+      </section>
+      <section>
+        <iframe class="map-frame" title="Laxmi Engineering Google Map" loading="lazy" src="https://www.google.com/maps?q=Laxmi%20Engineering%2C%20Par%20Dankuni%20More%2C%20Dankuni%20Coal%20Complex%2C%20Hooghly%20712310%2C%20West%20Bengal%2C%20India&z=16&output=embed"></iframe>
+      </section>
+    </div>
+  </main>
+  <script>renderSocial(); renderFooter();</script>
+  <script src="site.js"></script>
+</body>
+</html>

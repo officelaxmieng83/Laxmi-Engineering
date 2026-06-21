@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inquiry Form | Laxmi Engineering</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js"></script>
+</head>
+<body>
+  <script>renderHeader("Inquiry Form")</script>
+  <main class="section">
+    <div class="container split">
+      <section class="form-panel">
+        <span class="eyebrow">Inquiry Form</span>
+        <h1 class="section-title">Send a product inquiry</h1>
+        <form data-inquiry-form class="form-grid">
+          <div class="field"><label>Name</label><input name="name" required></div>
+          <div class="field"><label>Place</label><input name="place" required></div>
+          <div class="field"><label>Phone Number</label><input name="phone" required></div>
+          <div class="field"><label>Email Address Optional</label><input type="email" name="email"></div>
+          <div class="field full"><label>Product Multiple Selection</label><div class="check-grid" data-product-options></div></div>
+          <div class="field full"><label>Message Optional</label><textarea name="message"></textarea></div>
+          <div class="field full"><button class="btn primary" type="submit">Send Inquiry On WhatsApp...</button></div>
+        </form>
+        <div data-inquiry-status></div>
+      </section>
+      <aside class="about-box">
+        <h2>Quick Inquiry</h2>
+        <p>Call on <b>+91 9477090833</b> or <b>+91 9883194050</b></p>
+        <p>Email on <b>office.laxmieng83@gmail.com</b></p>
+        <div class="actions">
+          <a class="btn green" target="_blank" href="https://wa.me/919477090833">WhatsApp Now</a>
+          <a class="btn red" href="tel:919477090833">Call Now</a>
+        </div>
+        <img src="assets/banner.jpg" alt="Laxmi Engineering catalogue banner">
+      </aside>
+    </div>
+  </main>
+  <script>renderSocial(); renderFooter();</script>
+  <script src="site.js"></script>
+</body>
+</html>
